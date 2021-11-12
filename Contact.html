@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<style>
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	resize: none  
+}
+
+input[type=email], email {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	resize: none
+}
+	
+/* I couldn't figure out how to reduce the above two styles into a single rule. */
+
+input[type=submit] {
+	background-color: black;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color: black;
+	transition-property: background-color, font-color;
+	transition-duration: 0.6s;
+}
+	
+/* Hover text doesn't look quite right (maybe out to be bold?) but at this point 
+	I'm just trying to get this project done, so fuck it. */ 
+
+.container {
+	border-radius: 5px;
+	background-color: white;
+	padding: 3px;
+}
+
+.container {
+	font-family: sans-serif;
+	font-size: 110%;
+	margin: 2em;
+	font-weight: strong;
+}
+
+.container { 
+	display: flex;
+}
+
+.container > li { 
+	flex: 0.1;
+}
+
+@media all and (max-width: 600px) { 
+	.container {
+		flex-wrap: wrap;
+	}
+	.container > li {
+		flex-basis: 50%;
+	}
+}
+
+@media all and (max-width: 400px) {  
+	.container > li {
+		flex-basis: 100%;
+	}
+	.search {
+		order: 1;
+	}
+}
+
+nav {
+	font-family: sans-serif;
+	font-size: 150%;
+	margin: 2em;
+	font-weight: strong;
+	}
+
+ul#navlist {
+	list-style-type: none;
+}
+
+.smooth {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: .1em .3em;
+	width: 4em;
+	border-radius: 4px;
+	color: black;
+	background-color: white;
+	transition-property: background-color, font-color;
+	transition-duration: 0.6s;
+}
+	
+/* I don't konw why border-radius determines the shape of the background 
+	for flexbox (or any, considering [input]?) properties */
+	
+.smooth:hover, .smooth:focus {
+	color: white;
+	background-color: black;
+	opacity: 0.8
+}
+
+/* I had no idea how to fix the background color of the nav 
+	bar in pure code so I used Dreamweaver's CSS Designer. 
+
+/* At some point I'd like to add a black line a few px beneath the 
+	navbar to divide it from the rest of the page. */ 
+</style>
+</head>
+
+<body>
+<nav>  
+  <ul id="navlist" class="container">
+	  <li><a href="Final_Project_Title_Page.html" class="smooth">Home</a></li>  
+	  <li><a href="#" class="smooth">Contact</a></li>  
+  </ul>  
+</nav>
+
+<div class="container">
+	<form action="action_page.php">
+		
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+		<label for="country">Country</label>
+		<select id="country" name="country">
+			<option value="australia">Australia</option>
+			<option value="canada">Canada</option>
+			<option value="usa">USA</option>
+			<option value="united kingdom">United Kingdom</option>
+			<option value="ireland">Ireland</option>
+			<option value="germany">Germany</option>
+			<option value="france">France</option>
+			<option value="denmark">Denmark</option>
+			<option value="netherlands">Netherlands</option>
+			<option value="belgium">Belgium</option>
+			<option value="spain">Spain</option>
+			<option value="portugal">Portugal</option>
+			<option value="poland">Poland</option>
+			<option value="norway">Norway</option>
+			<option value="sweden">Sweden</option>
+			<option value="finland">Finland</option>
+			<option value="austria">Austria</option>
+			<option value="switzerland">Switzerland</option>
+			<option value="estonia">Estonia</option>
+			<option value="latvia">Latvia</option>
+			<option value="lithuania">Lithuania</option>
+			<option value="poland">Poland</option>
+			<option value="czechoslovakia">Czechoslovakia</option>
+			<option value="hungary">Hungary</option>
+			<option value="slovenia">Slovenia</option>
+			<option value="croatia">Croatia</option>
+			<option value="serbia">Serbia</option>
+			<option value="bosnia and herzegovina">Bosnia and Herzegovina</option>
+			<option value="montenegro">Montenegro</option>
+			<option value="kosovo">Kosovo</option>
+			<option value="albania">Albania</option>
+			<option value="north macedonia">North Macedonia</option>
+			<option value="greece">Greece</option>
+			<option value="bulgaria">Bulgaria</option>
+			<option value="romania">Romania</option>
+			<option value="ukraine">Ukraine</option>
+			<option value="slovakia">Slovakia</option>
+			<option value="belarus">Belarus</option>
+			<option value="moldova">Moldova</option>
+			<option value="russian federation">Russian Federation</option>
+			<option value="people's republic of china">People's Republic of China</option>
+			<option value="taiwan">Taiwan</option>
+			<option value="japan">Japan</option>
+		</select>
+
+		<label for="subject">Subject</label>
+		<textarea id="subject" name="subject" placeholder="Tell me why you're contacting me" style="height:200px"></textarea>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" placeholder="Your email address">
+		
+		<input type="submit" value="Submit">
+	</form>
+</div> 
+</body>
+
+</html>
