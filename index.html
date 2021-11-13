@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Ralston Final Project Title Page</title>
+<style>
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.container { 
+	display: flex;
+}
+
+.container > li { 
+	flex: 0.1;
+}
+
+@media all and (max-width: 600px) { 
+	.container {
+		flex-wrap: wrap;
+	}
+	.container > li {
+		flex-basis: 50%;
+	}
+}
+
+@media all and (max-width: 400px) {  
+	.container > li {
+		flex-basis: 100%;
+	}
+	.search {
+		order: 1;
+	}
+}
+
+nav {
+	font-family: sans-serif;
+	font-size: 150%;
+	margin: 2em;
+	font-weight: strong;
+	}
+
+ul#navlist {
+	list-style-type: none;
+}
+
+.smooth {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: .1em .3em;
+	width: 4em;
+	border-radius: 4px;
+	color: black;
+	background-color: white;
+	transition-property: background-color, font-color;
+	transition-duration: 0.6s;
+}
+
+/* The navbar hover property's border-radius was altered to same 
+	value of the input[type=submit] rule on the contact.html page. */
+
+.smooth:hover, .smooth:focus {
+	color: white;
+	background-color: black;
+	opacity: 0.8;
+}
+/* My original intent was for my art to run horiztonally across the 
+	title page, but Javascript was apparently my only option. I'll change 
+	this later if I use this for my portfolio. */
+	
+/* Website is also lacking a proper footer (or accredation of some kind). */
+</style>
+</head>
+
+<body>
+<nav>  
+  <ul id="navlist" class="container">
+	  <li><a href="Final_Project_Title_Page.html" class="smooth">Home</a></li>  
+	  <li><a href="Contact.html" class="smooth">Contact</a></li>  
+  </ul>  
+</nav>
+
+<div class="row">
+	<div class="column">
+		<img src="images/scan.jpg" alt="PRISON ARTWORK No. 1">
+		<img src="images/scan0001.jpg" alt="PRISON ARTWORK No. 2">
+		<img src="images/scan0002.jpg" alt="PRISON ARTWORK No. 3">
+		<img src="images/scan0003.jpg" alt="PRISON ARTWORK No. 4">
+		<img src="images/scan0004.jpg" alt="PRISON ARTWORK No. 5">
+		<img src="images/scan0005.jpg" alt="PRISON ARTWORK No. 6">
+		<img src="images/scan0006.jpg" alt="PRISON ARTWORK No. 7">
+	</div>
+	<div class="column">
+		<img src="images/scan0007.jpg" alt="PRISON ARTWORK No. 8">
+		<img src="images/scan0008-censored.jpg" alt="PRISON ARTWORK No. 9">
+		<img src="images/scan0009.jpg" alt="PRISON ARTWORK No. 10">
+		<img src="images/scan0010.jpg" alt="PRISON ARTWORK No. 11">
+		<img src="images/scan0011.jpg" alt="PRISON ARTWORK No. 12">
+		<img src="images/scan0012.jpg" alt="PRISON ARTWORK No. 13">
+		<img src="images/scan0013.jpg" alt="PRISON ARTWORK No. 14">
+	</div>
+	<div class="column">
+		<img src="images/scan0014.jpg" alt="PRISON ARTWORK No. 15">
+		<img src="images/scan0015.jpg" alt="PRISON ARTWORK No. 16">
+		<img src="images/scan0016.jpg" alt="PRISON ARTWORK No. 17">
+		<img src="images/scan0017.jpg" alt="PRISON ARTWORK No. 18">
+		<img src="images/scan0018.jpg" alt="PRISON ARTWORK No. 19">
+		<img src="images/scan0020.jpg" alt="PRISON ARTWORK No. 20">
+	</div>
+</div>
+
+<footer>
+</footer>
+
+</body>
+
+</html>
