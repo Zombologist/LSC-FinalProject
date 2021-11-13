@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:/video/
+Disallow:/sources/sources/
