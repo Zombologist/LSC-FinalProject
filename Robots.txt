@@ -1,3 +1,4 @@
+Sitemap: https://zombologist.github.io/Sitemap.xml
 User-Agent:*
 Disallow:/video/
 Disallow:/sources/sources/
