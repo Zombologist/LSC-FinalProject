@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Ralston Final Project Title Page</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSCBSNLFX5"></script>
 <style>
 .row {
 	display: flex;
@@ -95,6 +96,16 @@ ul#navlist {
 	background-color: black;
 	opacity: 0.8;
 }
+
+/* The following code broke the website if placed at the top of the page, 
+	however the code as presented it immediately after the initial style 
+	tag. I have no idea if it works properly at this time. */
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+  gtag('config', 'G-NSCBSNLFX5');
 /* My original intent was for my art to run horiztonally across the 
 	title page, but Javascript was apparently my only option. I'll change 
 	this later if I use this for my portfolio. */
